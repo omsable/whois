@@ -1,4 +1,4 @@
-FROM          ruby:alpine3.7
-COPY          main.rb /main.rb
-RUN           gem install whois
-ENTRYPOINT   ["ruby", "main.rb"]
+FROM          jfloff/alpine-python:recent
+COPY          app.py /app.py
+RUN           pip install --upgrade pip && pip install whois
+ENTRYPOINT    ["python", "app.py"]
