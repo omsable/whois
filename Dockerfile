@@ -1,4 +1,4 @@
-FROM          jfloff/alpine-python:recent
+FROM          python:alpine
 COPY          app.py /app.py
-RUN           pip install --upgrade pip && pip install whois
+RUN           pip install pythonwhois
 ENTRYPOINT    ["python", "app.py"]
