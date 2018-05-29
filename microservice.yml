@@ -1,5 +1,7 @@
 commands:
   entrypoint:
     help: Run whois
-    additional_args: true
-    additional_kwargs: true
+    arguments:
+      domain:
+        type: string
+        help: Example: example.com (http:// and https:// are automatically stripped off)
