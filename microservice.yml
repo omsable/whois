@@ -1,5 +1,6 @@
-commands:
-  entrypoint:
+omg: 1
+actions:
+  lookup:
     help: Run whois
     arguments:
       domain:
