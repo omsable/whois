@@ -1,8 +1,0 @@
-omg: 1
-actions:
-  lookup:
-    help: Run whois
-    arguments:
-      domain:
-        type: string
-        help: Example: example.com (http:// and https:// are automatically stripped off)
