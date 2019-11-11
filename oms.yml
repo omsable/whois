@@ -1,0 +1,21 @@
+oms: 1
+info:
+  version: 0.1.0
+  title: Whois
+  description: Execute a whois query
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+actions:
+  lookup:
+    help: Run whois
+    format:
+      command: ['python app.py']
+    arguments:
+      domain:
+        type: string
+        help:
+          E.g. - example.com (http:// and https:// are automatically stripped
+          off)
+    output:
+      type: string
